@@ -10,8 +10,8 @@ class Map extends React.Component {
   componentDidMount() {
     this.map = Leaflet.map('map', {
       dragging: !Leaflet.Browser.mobile,
-      center: [41.8781, -87.6298],
-      zoom: 10,
+      center: [41.8500, -87.6500],
+      zoom: 11,
     });
     /*
      *  Providers can be managed with utils/leaflet-providers.js
@@ -64,7 +64,7 @@ class Map extends React.Component {
   };
 
   render() {
-    return <div id="map" style={{ width: '80vw', height: '50vh', margin: '32px auto' }} />;
+    return <div id="map" style={{ width: '80vw', height: '80vh', margin: '32px auto' }} />;
   }
 }
 
