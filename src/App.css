@@ -7,10 +7,10 @@
 .App-header {
   padding: 18px;
   text-align: center;
+  color: var(--secondary);
   background-image: url('./logo.svg');
   background-color: var(--primary);
   background-repeat: repeat-x;
-  color: var(--secondary);
 }
 
 .App-title {

@@ -58,7 +58,7 @@ class Map extends React.Component {
       marker.bindPopup(popupContent);
       marker.on('mouseover', () => marker.openPopup());
       marker.on('mouseout', () => marker.closePopup());
-      marker.on('click', () => this.props.clickMarker(location));
+      marker.on('click', () => marker.openPopup());
       marker.addTo(this.markerGroup);
     });
   };

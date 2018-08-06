@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Map from './components/EatsMap';
 
@@ -47,7 +46,6 @@ class App extends Component {
             longitude: -87.632263,
           },
         ]}
-          clickMarker={()=>{}}
         />
       </div>
     );
