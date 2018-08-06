@@ -5,7 +5,7 @@
 }
 
 .App-header {
-  padding: 12px;
+  padding: 18px;
   text-align: center;
   background-image: url('./logo.svg');
   background-color: var(--primary);
@@ -19,5 +19,5 @@
 }
 
 .App-intro {
-  font-size: 36px;
+  font-size: 32px;
 }
