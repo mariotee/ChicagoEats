@@ -5,17 +5,16 @@
 }
 
 .App-header {
+  padding: 12px;
   text-align: center;
   background-image: url('./logo.svg');
   background-color: var(--primary);
   background-repeat: repeat-x;
   color: var(--secondary);
-  height: 212px;
 }
 
 .App-title {
   margin: 0;
-  padding: 24px;
   font-size: 64px;
 }
 
