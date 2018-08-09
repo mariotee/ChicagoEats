@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 import Map from './components/EatsMap';
+import {HOST} from './constants/network.js';
 
 class App extends Component {
+  state = {
+    data: [],
+  }
+
+  async componentDidMount() {
+    const response = await fetch(HOST + '/api/places');
+    const json = await response.json();
+
+    this.setState({
+      data: json,
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -13,40 +27,9 @@ class App extends Component {
           This app is still in the brainstorming step of the process;<br/>
           This map is just for show. It only has like 5 places. lol
         </p>
-        <Map 
-          data={[
-          {
-            name: 'Jeni\'s Splendid Ice Creams',
-            address: '1505 N Milwaukee Ave',
-            latitude: 41.918053,
-            longitude: -87.688491,
-          },
-          {
-            name: 'Italian Village',
-            address: '71 W Monroe St',
-            latitude: 41.880634,
-            longitude: -87.630159,
-          },
-          {
-            name: 'Calumet Fisheries',
-            address: '3259 E 95th St',
-            latitude: 41.722633,
-            longitude: -87.543981,
-          },
-          {
-            name: 'Jim\'s Original',
-            address: '5034, 1250 S Union Ave',
-            latitude: 41.865825,
-            longitude: -87.645191,
-          },
-          {
-            name: 'Legend Tasty House',
-            address: '2242 S Wentworth Ave',
-            latitude: 41.851612,
-            longitude: -87.632263,
-          },
-        ]}
-        />
+        {
+          this.state.data && <Map data={this.state.data}/>
+        }
       </div>
     );
   }

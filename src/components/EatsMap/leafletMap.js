@@ -7,7 +7,7 @@ import Leaflet from 'leaflet';
 import PropTypes from 'prop-types';
 
 class Map extends React.Component {
-  componentDidMount() {
+  componentDidMount() {    
     this.map = Leaflet.map('map', {
       dragging: !Leaflet.Browser.mobile,
       center: [41.8500, -87.6500],
@@ -27,7 +27,7 @@ class Map extends React.Component {
     const mapProviderURL =
       'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}';
     const options = {
-      
+      minZoom: 10,
     };
     Leaflet.tileLayer(mapProviderURL, options).addTo(this.map);
     this.loadMap();
@@ -50,8 +50,12 @@ class Map extends React.Component {
 
       let popupContent = `
         <div>
-          ${location.name}: ${location.address}
-          <br/>
+          ${location.name} <br/>
+          ${location.address}<br/>
+          ${location.breakfast ? 'Breakfast ': ''}
+          ${location.lunch ? 'Lunch ': ''}
+          ${location.dinner ? 'Dinner ': ''}
+          ${location.dessert ? 'Dessert ': ''}
         </div>
       `;
 
@@ -70,7 +74,6 @@ class Map extends React.Component {
 
 Map.propTypes = {
   data: PropTypes.array.isRequired,
-  clickMarker: PropTypes.func.isRequired,
 };
 
 export default Map;

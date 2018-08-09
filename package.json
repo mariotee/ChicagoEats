@@ -1,5 +1,6 @@
 {
   "name": "chicago-eats",
+  "author": "Mario Torres",
   "homepage" : "https://mariotee.github.io/Chicago-Eats",
   "version": "0.1.0",
   "private": true,
