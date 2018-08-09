@@ -14,11 +14,7 @@ class Map extends React.Component {
       zoom: 11,
     });
     /*
-     *  Providers can be managed with utils/leaflet-providers.js
-     *  OR they can be managed with urls found from the following:
-     *  http://leaflet-extras.github.io/leaflet-providers/preview/
-     *
-     *  some personal favourites:
+     *  some provider URLs:
      *  Cartoon-Like with detailed zooms: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
      *  Sattelite view with detailed zooms: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
      *  Darker Cartoon-Like, no detailed zoom: 'https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}'
@@ -52,6 +48,7 @@ class Map extends React.Component {
         <div>
           ${location.name} <br/>
           ${location.address}<br/>
+          Type: 
           ${location.breakfast ? 'Breakfast ': ''}
           ${location.lunch ? 'Lunch ': ''}
           ${location.dinner ? 'Dinner ': ''}

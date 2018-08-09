@@ -25,10 +25,13 @@ class App extends Component {
         </header>
         <p className="App-intro">
           This app is still in the brainstorming step of the process;<br/>
-          This map is just for show. It only has like 5 places. lol
+          NOTE: The map might take like 5-8 seconds to load because
+          I use a free cloud service since I am poor. lol
         </p>
         {
-          this.state.data && <Map data={this.state.data}/>
+          this.state.data
+            ? <Map data={this.state.data}/>
+            : "Loading..."
         }
       </div>
     );
