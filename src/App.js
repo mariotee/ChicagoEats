@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from './components/EatsMap';
-import {HOST} from './constants/network.js';
+import {HOST} from 'constants/network.js';
+import Map from 'components/EatsMap';
+import Loading from 'components/Loading';
 
 class App extends Component {
   state = {
@@ -24,14 +25,13 @@ class App extends Component {
           <h1 className="App-title">Chicago Eats</h1>
         </header>
         <p className="App-intro">
-          This app is still in the brainstorming step of the process;<br/>
-          NOTE: The map might take like 5-8 seconds to load because
-          I use a free cloud service since I am poor. lol
+          This app is still in the brainstorming step of the process
         </p>
+        <br/>
         {
-          this.state.data
+          this.state.data[0]
             ? <Map data={this.state.data}/>
-            : "Loading..."
+            : <Loading/>
         }
       </div>
     );
