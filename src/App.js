@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {HOST} from 'constants/network.js';
 import Map from 'components/EatsMap';
-import Loading from 'components/Loading';
+import Loading from 'mt-material-stuff/AzureLoading';
 
 class App extends Component {
   state = {
