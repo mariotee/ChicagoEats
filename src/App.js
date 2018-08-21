@@ -25,7 +25,8 @@ class App extends Component {
           <h1 className="App-title">Chicago Eats</h1>
         </header>
         <p className="App-intro">
-          This app is still in the brainstorming step of the process
+          This app is still in the brainstorming step of the process. Right now, the map just shows
+          places where I have gone to eat in Chicago and their addresses.
         </p>
         <br/>
         {
