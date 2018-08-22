@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch(HOST + '/api/places');
+    const response = await fetch(process.env.REACT_APP_API_HOST + '/api/places');
     const json = await response.json();
 
     this.setState({
