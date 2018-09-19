@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Map from 'components/EatsMap';
-import Loading from 'mt-material-stuff/components/CloudLoading';
 
 class App extends Component {
   state = {
@@ -9,7 +8,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch(process.env.REACT_APP_API_HOST + '/api/places');
+    const response = await fetch('https://agt870qjq5.execute-api.us-east-2.amazonaws.com/api');
     const json = await response.json();
 
     this.setState({
@@ -29,9 +28,9 @@ class App extends Component {
         </p>
         <br/>
         {
-          this.state.data[0]
+          this.state.data.length
             ? <Map data={this.state.data}/>
-            : <Loading/>
+            : 'Loading...'
         }
       </div>
     );
