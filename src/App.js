@@ -23,8 +23,7 @@ class App extends Component {
           <h1 className="App-title">Chicago Eats</h1>
         </header>
         <p className="App-intro">
-          This app is still in the brainstorming step of the process. Right now, the map just shows
-          places where I have gone to eat in Chicago and their addresses.
+          This is just a map of good restaurants in my hometown of Chicago that I have been to.  I have a hard time coming up with recommendations for people, so this is used to quickly pull up places to recommend to anyone that asks me.
         </p>
         <br/>
         {
