@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch('https://agt870qjq5.execute-api.us-east-2.amazonaws.com/api');
+    const response = await fetch(process.env.REACT_APP_FETCH_HOST);
     const json = await response.json();
 
     this.setState({
