@@ -1,0 +1,10 @@
+/build
+/test
+/coverage
+/node_modules
+database.js
+
+.DS_Store
+.env
+
+npm-debug.log*

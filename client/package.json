@@ -1,7 +1,7 @@
 {
   "name": "chicago-eats",
   "author": "Mario Torres",
-  "homepage": "https://mariotee.github.io/Chicago-Eats",
+  "homepage": "https://mariotee.github.io/ChicagoEats",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm build/static/js/*.map",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
