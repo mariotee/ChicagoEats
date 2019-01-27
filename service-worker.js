@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ChicagoEats/precache-manifest.2943d2343a7a6c3140f67b68d7b2c916.js"
+  "/ChicagoEats/precache-manifest.7a631ae4bde32a27327fceac4200b805.js"
 );
 
 workbox.clientsClaim();
