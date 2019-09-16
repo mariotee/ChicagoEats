@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Calumet Fisheries",
+    "address": "3259 E 95th St",
+    "latitude": 41.722653,
+    "longitude": -87.543974,
+    "breakfast": false,
+    "lunch": true,
+    "dinner": true,
+    "dessert": false
+  },
+  {
+    "name": "Cocula Restaurant Commercial",
+    "address": "8839 S Commercial Ave",
+    "latitude": 41.734346,
+    "longitude": -87.551046,
+    "breakfast": true,
+    "lunch": true,
+    "dinner": true,
+    "dessert": true
+  },
+  {
+    "name": "Kikuya Japanese Restaurant",
+    "address": "1601 E 55th St",
+    "latitude": 41.795323,
+    "longitude": -87.586595,
+    "breakfast": false,
+    "lunch": true,
+    "dinner": true,
+    "dessert": true
+  },
+  {
+    "name": "Legend Tasty House",
+    "address": "2242 S Wentworth Ave",
+    "latitude": 41.851871,
+    "longitude": -87.632288,
+    "breakfast": false,
+    "lunch": false,
+    "dinner": false,
+    "dessert": true
+  },
+  {
+    "name": "Jeni's Splendid Ice Creams",
+    "address": "1505 N Milwaukee Ave",
+    "latitude": 41.908954,
+    "longitude": -87.674823,
+    "breakfast": false,
+    "lunch": false,
+    "dinner": false,
+    "dessert": true
+  },
+  {
+    "name": "Italian Village",
+    "address": "71 W Monroe St",
+    "latitude": 41.880608,
+    "longitude": -87.630160,
+    "breakfast": false,
+    "lunch": true,
+    "dinner": true,
+    "dessert": true
+  },
+  {
+    "name": "Mr Greek Gyros",
+    "address": "234 S Halsted St",
+    "latitude": 41.878123,
+    "longitude": -87.647502,
+    "breakfast": false,
+    "lunch": true,
+    "dinner": true,
+    "dessert": true
+  },
+  {
+    "name": "Connie's Pizza",
+    "address": "2373 S Archer Ave",
+    "latitude": 41.849198,
+    "longitude": -87.640861,
+    "breakfast": false,
+    "lunch": true,
+    "dinner": true,
+    "dessert": true
+  }
+]
